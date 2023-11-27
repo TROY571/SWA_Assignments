@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+
+<body onload="init('Horsens')">
+<label>
+    <select name="city" onchange="init(value)">
+        <option value="Horsens" selected="">Horsens</option>
+        <option value="Aarhus">Aarhus</option>
+        <option value="Copenhagen">Copenhagen</option>
+    </select>
+</label>
+
+<button onclick="send()">Send weather data</button>
+
+<div id="future">
+    <p>The hourly forecast for the next 24 hours:</p>
+    <div>
+        <p id="time0">0</p>
+        <p id="temperature0">1</p>
+        <p id="weather0">2</p>
+        <p id="precipitation0">3</p>
+        <p id="wind speed0">4</p>
+        <p id="cloud coverage0">5</p>
+    </div>
+    
+    <div>
+        <p id="time1">0</p>
+        <p id="temperature1">1</p>
+        <p id="weather1">2</p>
+        <p id="precipitation1">3</p>
+        <p id="wind speed1">4</p>
+        <p id="cloud coverage1">5</p>
+    </div>
+
+    <div>
+        <p id="time2">0</p>
+        <p id="temperature2">1</p>
+        <p id="weather2">2</p>
+        <p id="precipitation2">3</p>
+        <p id="wind speed2">4</p>
+        <p id="cloud coverage2">5</p>
+    </div>
+
+    <div>
+        <p id="time3">0</p>
+        <p id="temperature3">1</p>
+        <p id="weather3">2</p>
+        <p id="precipitation3">3</p>
+        <p id="wind speed3">4</p>
+        <p id="cloud coverage3">5</p>
+    </div>
+
+    <div>
+        <p id="time4">0</p>
+        <p id="temperature4">1</p>
+        <p id="weather4">2</p>
+        <p id="precipitation4">3</p>
+        <p id="wind speed4">4</p>
+        <p id="cloud coverage4">5</p>
+    </div>
+
+    <div>
+        <p id="time5">0</p>
+        <p id="temperature5">1</p>
+        <p id="weather5">2</p>
+        <p id="precipitation5">3</p>
+        <p id="wind speed5">4</p>
+        <p id="cloud coverage5">5</p>
+    </div>
+
+    <div>
+        <p id="time6">0</p>
+        <p id="temperature6">1</p>
+        <p id="weather6">2</p>
+        <p id="precipitation6">3</p>
+        <p id="wind speed6">4</p>
+        <p id="cloud coverage6">5</p>
+    </div>
+
+    <div>
+        <p id="time7">0</p>
+        <p id="temperature7">1</p>
+        <p id="weather7">2</p>
+        <p id="precipitation7">3</p>
+        <p id="wind speed7">4</p>
+        <p id="cloud coverage7">5</p>
+    </div>
+
+    <div>
+        <p id="time8">0</p>
+        <p id="temperature8">1</p>
+        <p id="weather8">2</p>
+        <p id="precipitation8">3</p>
+        <p id="wind speed8">4</p>
+        <p id="cloud coverage8">5</p>
+    </div>
+
+    <div>
+        <p id="time9">0</p>
+        <p id="temperature9">1</p>
+        <p id="weather9">2</p>
+        <p id="precipitation9">3</p>
+        <p id="wind speed9">4</p>
+        <p id="cloud coverage9">5</p>
+    </div>
+
+    <div>
+        <p id="time10">0</p>
+        <p id="temperature10">1</p>
+        <p id="weather10">2</p>
+        <p id="precipitation10">3</p>
+        <p id="wind speed10">4</p>
+        <p id="cloud coverage10">5</p>
+    </div>
+
+    <div>
+        <p id="time11">0</p>
+        <p id="temperature11">1</p>
+        <p id="weather11">2</p>
+        <p id="precipitation11">3</p>
+        <p id="wind speed11">4</p>
+        <p id="cloud coverage11">5</p>
+    </div>
+
+    <div>
+        <p id="time12">0</p>
+        <p id="temperature12">1</p>
+        <p id="weather12">2</p>
+        <p id="precipitation12">3</p>
+        <p id="wind speed12">4</p>
+        <p id="cloud coverage12">5</p>
+    </div>
+
+    <div>
+        <p id="time13">0</p>
+        <p id="temperature13">1</p>
+        <p id="weather13">2</p>
+        <p id="precipitation13">3</p>
+        <p id="wind speed13">4</p>
+        <p id="cloud coverage13">5</p>
+    </div>
+
+    <div>
+        <p id="time14">0</p>
+        <p id="temperature14">1</p>
+        <p id="weather14">2</p>
+        <p id="precipitation14">3</p>
+        <p id="wind speed14">4</p>
+        <p id="cloud coverage14">5</p>
+    </div>
+
+    <div>
+        <p id="time15">0</p>
+        <p id="temperature15">1</p>
+        <p id="weather15">2</p>
+        <p id="precipitation15">3</p>
+        <p id="wind speed15">4</p>
+        <p id="cloud coverage15">5</p>
+    </div>
+
+    <div>
+        <p id="time16">0</p>
+        <p id="temperature16">1</p>
+        <p id="weather16">2</p>
+        <p id="precipitation16">3</p>
+        <p id="wind speed16">4</p>
+        <p id="cloud coverage16">5</p>
+    </div>
+
+    <div>
+        <p id="time17">0</p>
+        <p id="temperature17">1</p>
+        <p id="weather17">2</p>
+        <p id="precipitation17">3</p>
+        <p id="wind speed17">4</p>
+        <p id="cloud coverage17">5</p>
+    </div>
+
+    <div>
+        <p id="time18">0</p>
+        <p id="temperature18">1</p>
+        <p id="weather18">2</p>
+        <p id="precipitation18">3</p>
+        <p id="wind speed18">4</p>
+        <p id="cloud coverage18">5</p>
+    </div>
+
+    <div>
+        <p id="time19">0</p>
+        <p id="temperature19">1</p>
+        <p id="weather19">2</p>
+        <p id="precipitation19">3</p>
+        <p id="wind speed19">4</p>
+        <p id="cloud coverage19">5</p>
+    </div>
+
+    <div>
+        <p id="time20">0</p>
+        <p id="temperature20">1</p>
+        <p id="weather20">2</p>
+        <p id="precipitation20">3</p>
+        <p id="wind speed20">4</p>
+        <p id="cloud coverage20">5</p>
+    </div>
+
+    <div>
+        <p id="time21">0</p>
+        <p id="temperature21">1</p>
+        <p id="weather21">2</p>
+        <p id="precipitation21">3</p>
+        <p id="wind speed21">4</p>
+        <p id="cloud coverage21">5</p>
+    </div>
+
+    <div>
+        <p id="time22">0</p>
+        <p id="temperature22">1</p>
+        <p id="weather22">2</p>
+        <p id="precipitation22">3</p>
+        <p id="wind speed22">4</p>
+        <p id="cloud coverage22">5</p>
+    </div>
+
+    <div>
+        <p id="time23">0</p>
+        <p id="temperature23">1</p>
+        <p id="weather23">2</p>
+        <p id="precipitation23">3</p>
+        <p id="wind speed23">4</p>
+        <p id="cloud coverage23">5</p>
+    </div>
+</div>
+
+<div id="recent">
+    <p>Data for the latest measurement:</p>
+    <p id="temperatureR">1</p>
+    <p id="weatherR">2</p>
+    <p id="precipitationR">3</p>
+    <p id="wind speedR">4</p>
+    <p id="cloud coverageR">5</p>
+</div>
+
+<div id="history">
+    <p>Last day data:</p>
+    <p id="minimumTemp">Minimum temperature:</p>
+    <p id="maximumTemp">Maximum temperature:</p>
+    <p id="totalPrecipitation">Total precipitation:</p>
+    <p id="avgWindSpd">Average wind speed:</p>
+</div>
+
+<script src="model.js"></script>
+<script src="request.js"></script>
+</body>
+</html>
